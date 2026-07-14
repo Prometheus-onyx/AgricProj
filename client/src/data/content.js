@@ -71,19 +71,19 @@ export const products = [
     name: 'Maize Seeds',
     description: 'Drought-tolerant hybrids engineered for strong yields and resilience.',
     image:
-      'https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1651667343153-6dc318e27e41?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Fertilizers',
     description: 'Balanced nutrition blends for healthier growth at every stage.',
     image:
-      'https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80',
+      'https://plus.unsplash.com/premium_photo-1663089572474-6e2dc35d0ede?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Pesticides',
     description: 'Targeted protection with responsible application and safety controls.',
     image:
-      'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1634752309905-6cb91bc78cf0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Farm Machinery',
@@ -95,7 +95,7 @@ export const products = [
     name: 'Irrigation Equipment',
     description: 'Smart irrigation components built for precision and long-term value.',
     image:
-      'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80',
+      'https://images.unsplash.com/photo-1738598665806-7ecc32c3594c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Animal Feed',
@@ -136,11 +136,11 @@ export const stats = [
 ];
 
 export const galleryImages = [
-  'https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1000&q=80',
+  'https://plus.unsplash.com/premium_photo-1675798983878-604c09f6d154?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   'https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=1000&q=80',
-  'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1000&q=80',
-  'https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1000&q=80',
-  'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=80',
+  'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://plus.unsplash.com/premium_photo-1682129071833-65eed17bcf11?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=684&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   'https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1000&q=80',
 ];
 
@@ -154,15 +154,15 @@ export const testimonials = [
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80',
   },
   {
-    name: 'Daniel Ortiz',
-    role: 'Operations Lead, Crest Agro',
+    name: 'Steve Bicko',
+    role: 'CEO, Ekron',
     quote:
       'Professional, proactive, and deeply knowledgeable. Every recommendation felt practical and good for the long term.',
     image:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+      'https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/rc9b9l74jwjo6b3fdaid',
   },
   {
-    name: 'Lilian Mwangi',
+    name: 'Susan Burnes',
     role: 'Owner, Horizon Ranch',
     quote:
       'We now have stronger yields, better soil health, and a team that feels like an extension of our business.',
@@ -198,10 +198,10 @@ export const socialLinks = [
 ];
 
 export const contactDetails = [
-  { label: 'Email', value: 'hello@verdantharvest.com', icon: FaEnvelope },
-  { label: 'Phone', value: '+1 (555) 214-0198', icon: FaPhone },
-  { label: 'Address', value: '214 Riverstone Road, Farmington, CA', icon: FaLocationDot },
-  { label: 'Working Hours', value: 'Mon–Sat: 8:00 AM – 6:00 PM', icon: FaClock },
+  { label: 'Email', value: 'hello@hi-fat.com', icon: FaEnvelope },
+  { label: 'Phone', value: '+254 (702) 480-425', icon: FaPhone },
+  { label: 'Address', value: 'Thika Road, Karasani, Nairobi', icon: FaLocationDot },
+  { label: 'Working Hours', value: 'Sun–Fri: 8:00 AM – 6:00 PM', icon: FaClock },
 ];
 
 export const quickLinks = [
@@ -217,7 +217,7 @@ export const heroHighlights = [
   'Dedicated support',
 ];
 
-export const companyName = 'Verdant Harvest';
+export const companyName = 'HI-FAT';
 export const companyTagline = 'Growing Tomorrow’s Agriculture Today';
 
 export { FaStar, FaArrowRight, FaChevronDown };

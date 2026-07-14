@@ -36,7 +36,7 @@ const About = () => {
           className="flex flex-col justify-center"
         >
           <SectionHeading
-            eyebrow="About Verdant Harvest"
+            eyebrow="About HI-FAT"
             title="Trusted by growers who value resilience and performance."
             description="We combine field expertise, premium inputs, and intelligent practice to help farms thrive in changing conditions."
           />
