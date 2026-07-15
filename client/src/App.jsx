@@ -12,6 +12,7 @@ import Contact from './sections/Contact';
 import Map from './sections/Map';
 import Newsletter from './sections/Newsletter';
 import Footer from './sections/Footer';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (

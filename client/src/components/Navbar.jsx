@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 import { companyName, navItems } from '../data/content';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -30,7 +31,11 @@ const Navbar = () => {
 
         <nav className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="text-sm font-medium transition hover:text-[#2E7D32]">
+            <a
+              key={item.href}
+              href={item.href}
+              className="text-sm font-medium transition hover:text-[#2E7D32]"
+            >
               {item.label}
             </a>
           ))}
