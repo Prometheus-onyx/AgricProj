@@ -16,7 +16,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1800&q=80')",
+            "url('https://images.unsplash.com/photo-1588186879741-889eb26e549f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         }}
       />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(46,125,50,0.75),rgba(7,26,12,0.9))]" />
@@ -94,7 +94,7 @@ const Hero = () => {
               </div>
             </div>
 
-            {floatingIcons.map(({ icon: Icon, position }, index) => (
+           {/* {floatingIcons.map(({ icon: Icon, position }, index) => (
               <motion.div
                 key={position}
                 className={`absolute ${position} hidden rounded-full bg-white/20 p-4 text-2xl text-[#FBC02D] shadow-xl backdrop-blur md:block`}
@@ -103,7 +103,7 @@ const Hero = () => {
               >
                 <Icon />
               </motion.div>
-            ))}
+            ))} */}
           </motion.div>
         </div>
       </div>

@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
             <label className="mt-4 block text-sm font-medium text-slate-700">
               Phone
-              <input type="tel" className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="(555) 000-0000" />
+              <input type="tel" className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="+254 (702) 480-425" />
             </label>
             <label className="mt-4 block text-sm font-medium text-slate-700">
               Message

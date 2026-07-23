@@ -36,9 +36,9 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white">Contact</h3>
           <ul className="mt-5 space-y-3 text-sm">
-            <li>hello@verdantharvest.com</li>
-            <li>+1 (555) 214-0198</li>
-            <li>214 Riverstone Road</li>
+            <li>hello@hi-fat.com</li>
+            <li>+254 (702) 480-425</li>
+            <li>Thika Road, Karasani, Nairobi</li>
           </ul>
           <div className="mt-5 flex gap-3">
             {socialLinks.map(({ icon: Icon, href, label }) => (
@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
 
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-4 border-t border-white/10 px-6 pt-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between lg:px-8">
-        <p>© 2026 Verdant Harvest. All rights reserved.</p>
+        <p>© { new Date().getFullYear()} Powered by <a className='hover:text-[#FBC02D]' href='https://portfolio-354q.vercel.app/'> Ekron</a>. All rights reserved.</p>
         <div className="flex gap-4">
           <a href="#" className="hover:text-[#FBC02D]">Privacy Policy</a>
           <a href="#" className="hover:text-[#FBC02D]">Terms</a>
