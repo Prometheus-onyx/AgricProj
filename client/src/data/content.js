@@ -24,13 +24,13 @@ import {
 } from 'react-icons/fa6';
 
 export const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Products', href: '#products' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' },
+  { label: "Home", path: "/" },
+  { label: "About Us", path: "/about" },
+  { label: "Services", path: "/services" },
+  { label: "Products", path: "/products" },
+  { label: "Gallery", path: "/gallery" },
+  { label: "FAQs", path: "/faqs" },
+  { label: "Contact", path: "/contact" },
 ];
 
 export const services = [

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 import { companyName, navItems } from '../data/content';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -21,18 +22,31 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#home" className="flex items-center gap-3 text-lg font-semibold tracking-wide">
+        <NavLink 
+        to="/" 
+        key="home" 
+        className="flex items-center gap-3 text-lg font-semibold tracking-wide">
           <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#2E7D32] text-white shadow-lg">
             🌾
           </span>
           <span>{companyName}</span>
-        </a>
+        </NavLink>
 
         <nav className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="text-sm font-medium transition hover:text-[#2E7D32]">
+            <NavLink 
+            key={item.path} 
+            to={item.path} 
+            className={({ isActive }) => 
+              `text-sm font-medium transition hover:text-[#2E7D32] ${
+                isActive
+                ? "text-[#2E7D32]"
+                : "text-slate-700"
+              }`
+            }
+            >
               {item.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
 
@@ -53,18 +67,18 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-slate-200 bg-white/95 px-6 py-4 text-slate-900 backdrop-blur lg:hidden"
+            className="border-t border-slate-200 bg-black px-6 py-4 text-slate-50 backdrop-blur lg:hidden"
           >
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
+                <NavLink
+                  key={item.path}
+                  to={item.path}
                   className="text-sm font-medium"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
-                </a>
+                </NavLink>
               ))}
             </nav>
           </motion.div>
