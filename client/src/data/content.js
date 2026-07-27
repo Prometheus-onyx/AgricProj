@@ -199,16 +199,16 @@ export const socialLinks = [
 
 export const contactDetails = [
   { label: 'Email', value: 'hello@hi-fat.com', icon: FaEnvelope },
-  { label: 'Phone', value: '+254 (702) 480-425', icon: FaPhone },
+  { label: 'Phone', value: '+254 (728) 042-590', icon: FaPhone },
   { label: 'Address', value: 'Thika Road, Karasani, Nairobi', icon: FaLocationDot },
   { label: 'Working Hours', value: 'Sun–Fri: 8:00 AM – 6:00 PM', icon: FaClock },
 ];
 
 export const quickLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Products', href: '#products' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', path: '/about' },
+  { label: 'Services', path: '/services' },
+  { label: 'Products', path: '/products' },
+  { label: 'Contact', path: '/contact' },
 ];
 
 export const heroHighlights = [
