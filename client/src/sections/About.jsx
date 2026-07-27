@@ -11,7 +11,7 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#f7f5ef] py-24">
+    <section id="about" className="bg-[#0F172A] py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:px-8">
         <motion.div
           initial={{ opacity: 0, x: -24 }}

@@ -11,7 +11,7 @@ const socialLinks = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-white py-24">
+    <section id="contact" className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-10 rounded-[2rem] border border-slate-200 bg-[#f7f5ef] p-8 shadow-xl lg:grid-cols-[0.9fr_1.1fr] lg:p-10">
           <motion.div

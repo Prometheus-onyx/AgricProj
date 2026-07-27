@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 text-slate-900 shadow-lg backdrop-blur' : 'bg-black text-white'
+        scrolled ? 'bg-black/80 text-slate-900 shadow-lg backdrop-blur' : 'bg-black text-white'
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
@@ -29,7 +29,7 @@ const Navbar = () => {
           <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#2E7D32] text-white shadow-lg">
             🌾
           </span>
-          <span>{companyName}</span>
+          <span className='text-slate-900 dark:text-slate-100'>{companyName}</span>
         </NavLink>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -41,7 +41,7 @@ const Navbar = () => {
               `text-sm font-medium transition hover:text-[#2E7D32] ${
                 isActive
                 ? "text-[#2E7D32]"
-                : "text-slate-900"
+                : "text-slate-900 dark:text-slate-100"
               }`
             }
             >

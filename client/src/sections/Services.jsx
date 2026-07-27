@@ -4,7 +4,7 @@ import { services } from '../data/content';
 
 const Services = () => {
   return (
-    <section id="services" className="bg-white py-24">
+    <section id="services" className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Services"

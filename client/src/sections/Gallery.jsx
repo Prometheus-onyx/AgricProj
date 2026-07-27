@@ -8,7 +8,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section id="gallery" className="bg-[#f7f5ef] py-24">
+    <section id="gallery" className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Gallery"

@@ -8,7 +8,7 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="bg-[#f7f5ef] py-24">
+    <section className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Frequently Asked Questions"

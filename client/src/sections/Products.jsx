@@ -5,7 +5,7 @@ import { products } from '../data/content';
 
 const Products = () => {
   return (
-    <section id="products" className="bg-[#f7f5ef] py-24">
+    <section id="products" className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Featured Products"
