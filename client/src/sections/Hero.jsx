@@ -1,14 +1,8 @@
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaLeaf, FaSeedling, FaTractor, FaWater } from 'react-icons/fa6';
+import { FaArrowRight, FaSeedling, } from 'react-icons/fa6';
 import { companyTagline, heroHighlights } from '../data/content';
 
 const Hero = () => {
-  const floatingIcons = [
-    { icon: FaLeaf, position: 'left-[10%] top-[20%]' },
-    { icon: FaSeedling, position: 'right-[12%] top-[18%]' },
-    { icon: FaTractor, position: 'left-[12%] bottom-[18%]' },
-    { icon: FaWater, position: 'right-[16%] bottom-[22%]' },
-  ];
 
   return (
     <section id="home" className="relative isolate overflow-hidden bg-[#0f2417] text-white">
@@ -94,16 +88,6 @@ const Hero = () => {
               </div>
             </div>
 
-           {/* {floatingIcons.map(({ icon: Icon, position }, index) => (
-              <motion.div
-                key={position}
-                className={`absolute ${position} hidden rounded-full bg-white/20 p-4 text-2xl text-[#FBC02D] shadow-xl backdrop-blur md:block`}
-                animate={{ y: [0, -10, 0], rotate: [0, 6, -4, 0] }}
-                transition={{ duration: 4 + index, repeat: Infinity, ease: 'easeInOut' }}
-              >
-                <Icon />
-              </motion.div>
-            ))} */}
           </motion.div>
         </div>
       </div>
