@@ -1,6 +1,6 @@
 const Map = () => {
   return (
-    <section className="bg-[#f7f5ef] py-20">
+    <section className="bg-black py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="overflow-hidden rounded-[2rem] border border-slate-200 shadow-xl">
           <iframe
