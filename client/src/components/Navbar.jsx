@@ -41,7 +41,7 @@ const Navbar = () => {
               `text-sm font-medium transition hover:text-[#2E7D32] ${
                 isActive
                 ? "text-[#2E7D32]"
-                : "text-slate-700"
+                : "text-slate-900"
               }`
             }
             >

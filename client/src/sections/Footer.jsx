@@ -1,4 +1,5 @@
 import { companyName, quickLinks, socialLinks } from '../data/content';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
           <ul className="mt-5 space-y-3 text-sm">
             {quickLinks.map((link) => (
-              <li key={link.href}><a href={link.href} className="transition hover:text-[#FBC02D]">{link.label}</a></li>
+              <li key={link.href}><NavLink to={link.path} key={link.path} className="transition hover:text-[#FBC02D]">{link.label}</NavLink></li>
             ))}
           </ul>
         </div>
@@ -37,7 +38,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white">Contact</h3>
           <ul className="mt-5 space-y-3 text-sm">
             <li>hello@hi-fat.com</li>
-            <li>+254 (702) 480-425</li>
+            <li>+254 (728) 042-590</li>
             <li>Thika Road, Karasani, Nairobi</li>
           </ul>
           <div className="mt-5 flex gap-3">
