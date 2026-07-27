@@ -4,7 +4,7 @@ import { features } from '../data/content';
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Why Choose Us"
