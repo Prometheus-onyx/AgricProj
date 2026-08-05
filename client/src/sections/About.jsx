@@ -11,7 +11,7 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#0F172A] py-24">
+    <section id="about" className="bg-black py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:px-8">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
@@ -48,7 +48,7 @@ const About = () => {
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {highlights.map((item) => (
               <div key={item} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm">
-                <span className="rounded-full bg-[#E8F5E9] p-2 text-[#2E7D32]">
+                <span className="rounded-full bg-[#E8F5E9] p-2 text-red-600">
                   <FaCheck />
                 </span>
                 <span className="font-medium text-slate-700">{item}</span>

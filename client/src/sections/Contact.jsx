@@ -13,15 +13,15 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-10 rounded-[2rem] border border-slate-200 bg-[#f7f5ef] p-8 shadow-xl lg:grid-cols-[0.9fr_1.1fr] lg:p-10">
+        <div className="grid gap-10 rounded-[2rem] border bg-black p-8 shadow-xl lg:grid-cols-[0.9fr_1.1fr] lg:p-10">
           <motion.div
             initial={{ opacity: 0, x: -18 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4 }}
-            className="rounded-[1.5rem] bg-[#1B5E20] p-8 text-white"
+            className="rounded-[1.5rem] bg-white/10 p-8 text-white"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#c8e6c9]">Contact Us</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">Contact Us</p>
             <h2 className="mt-4 text-3xl font-semibold">Let’s grow something remarkable together.</h2>
             <p className="mt-4 text-slate-200">Reach out for support, product quotes, or a tailored consultation.</p>
 

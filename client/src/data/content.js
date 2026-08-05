@@ -31,6 +31,7 @@ export const navItems = [
   { label: "Gallery", path: "/gallery" },
   { label: "FAQs", path: "/faqs" },
   { label: "Contact", path: "/contact" },
+  { label: "Map", path: "/map" },
 ];
 
 export const services = [

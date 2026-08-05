@@ -27,9 +27,9 @@ const Products = () => {
             >
               <img src={product.image} alt={product.name} loading="lazy" className="h-48 w-full object-cover" />
               <div className="p-7">
-                <h3 className="text-xl font-semibold text-[#1B5E20]">{product.name}</h3>
+                <h3 className="text-xl font-semibold text-red-600">{product.name}</h3>
                 <p className="mt-3 text-slate-600">{product.description}</p>
-                <a href="#contact" className="mt-6 inline-flex items-center font-semibold text-[#2E7D32]">
+                <a href="#contact" className="mt-6 inline-flex items-center font-semibold text-red-600">
                   Learn More <FaArrowRight className="ml-2" />
                 </a>
               </div>

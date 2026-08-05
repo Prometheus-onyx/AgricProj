@@ -52,7 +52,7 @@ const Navbar = () => {
 
         <button
           type="button"
-          className="rounded-full border border-white/20 p-3 text-sm lg:hidden"
+          className="rounded-full border border-white/20 p-3 text-sm lg:hidden text-white"
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >

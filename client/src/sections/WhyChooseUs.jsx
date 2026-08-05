@@ -26,10 +26,10 @@ const WhyChooseUs = () => {
                 whileHover={{ y: -6, scale: 1.02 }}
                 className="rounded-[1.5rem] border border-slate-200 bg-gradient-to-br from-[#f8fbf8] to-[#f7f5ef] p-7 text-center shadow-md"
               >
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#2E7D32] text-white">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-red-600 text-white">
                   <Icon className="text-xl" />
                 </div>
-                <h3 className="mt-5 text-lg font-semibold text-[#1B5E20]">{feature.title}</h3>
+                <h3 className="mt-5 text-lg font-semibold text-red-600">{feature.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">{feature.description}</p>
               </motion.article>
             );

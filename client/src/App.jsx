@@ -10,6 +10,7 @@ import ProductsPage from "./pages/ProductsPage";
 import ContactPage from "./pages/ContactPage";
 import FAqPage from "./pages/FAqPage";
 import GalleryPage from "./pages/GalleryPage";
+import MapPage from "./pages/MapPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faqs" element={<FAqPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/map" element={<MapPage />} />
         </Routes>
       </main>
 

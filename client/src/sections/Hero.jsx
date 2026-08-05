@@ -13,7 +13,7 @@ const Hero = () => {
             "url('https://images.unsplash.com/photo-1588186879741-889eb26e549f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         }}
       />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(46,125,50,0.75),rgba(7,26,12,0.9))]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(200,50,50,0.75),rgba(60,10,10,0.9))]"/>
 
       <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-28 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
@@ -65,10 +65,10 @@ const Hero = () => {
               <div className="rounded-[1.7rem] bg-gradient-to-br from-[#e8f5e9] via-white to-[#f8f1e7] p-8 text-slate-800">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#2E7D32]">Field Intelligence</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">Field Intelligence</p>
                     <h2 className="mt-2 text-2xl font-semibold">Smart agriculture, naturally.</h2>
                   </div>
-                  <div className="rounded-full bg-[#2E7D32] p-3 text-white">
+                  <div className="rounded-full bg-red-600 p-3 text-white">
                     <FaSeedling className="text-xl" />
                   </div>
                 </div>
@@ -81,7 +81,7 @@ const Hero = () => {
                   ].map(([label, value]) => (
                     <div key={label} className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
                       <p className="text-sm text-slate-500">{label}</p>
-                      <p className="mt-1 text-xl font-semibold text-[#1B5E20]">{value}</p>
+                      <p className="mt-1 text-xl font-semibold text-red-600">{value}</p>
                     </div>
                   ))}
                 </div>

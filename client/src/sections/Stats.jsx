@@ -27,7 +27,7 @@ const Counter = ({ value, suffix }) => {
 
   return (
     <div ref={ref} className="text-center">
-      <p className="text-4xl font-semibold text-[#1B5E20] sm:text-5xl">
+      <p className="text-4xl font-semibold text-red-600 sm:text-5xl">
         {displayValue}
         {suffix}
       </p>
@@ -37,7 +37,7 @@ const Counter = ({ value, suffix }) => {
 
 const Stats = () => {
   return (
-    <section className="bg-[#1B5E20] py-20 text-white">
+    <section className="bg-black py-20 text-white">
       <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-2 xl:grid-cols-4 lg:px-8">
         {stats.map((stat, index) => (
           <motion.div
