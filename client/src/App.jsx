@@ -11,10 +11,12 @@ import ContactPage from "./pages/ContactPage";
 import FAqPage from "./pages/FAqPage";
 import GalleryPage from "./pages/GalleryPage";
 import MapPage from "./pages/MapPage";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
+      <Analytics />
       <Navbar />
 
       <main>
