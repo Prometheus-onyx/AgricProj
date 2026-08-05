@@ -13,7 +13,6 @@ const Hero = () => {
             "url('https://images.unsplash.com/photo-1588186879741-889eb26e549f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         }}
       />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(200,50,50,0.75),rgba(60,10,10,0.9))]"/>
 
       <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-28 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
