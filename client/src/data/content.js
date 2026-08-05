@@ -160,7 +160,7 @@ export const testimonials = [
     quote:
       'Professional, proactive, and deeply knowledgeable. Every recommendation felt practical and good for the long term.',
     image:
-      'https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/rc9b9l74jwjo6b3fdaid',
+      'https://www.image2url.com/r2/default/images/1785938194526-bf880a58-4fd4-44b4-ab31-8c1f4c4fb901.jpg',
   },
   {
     name: 'Susan Burnes',
