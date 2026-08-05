@@ -26,7 +26,7 @@ const Navbar = () => {
         to="/" 
         key="home" 
         className="flex items-center gap-3 text-lg font-semibold tracking-wide">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#2E7D32] text-white shadow-lg">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-600 text-white shadow-lg">
             🌾
           </span>
           <span className='text-slate-900 dark:text-slate-100'>{companyName}</span>
@@ -38,9 +38,9 @@ const Navbar = () => {
             key={item.path} 
             to={item.path} 
             className={({ isActive }) => 
-              `text-sm font-medium transition hover:text-[#2E7D32] ${
+              `text-sm font-medium transition hover:text-red-600 ${
                 isActive
-                ? "text-[#2E7D32]"
+                ? "text-red-600 dark:text-red-400"
                 : "text-slate-900 dark:text-slate-100"
               }`
             }
