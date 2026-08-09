@@ -7,7 +7,9 @@ const Footer = () => {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <div className="flex items-center gap-3 text-lg font-semibold text-white">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-600 text-white">🌾</span>
+            <span className="flex h-10 w-10 items-center justify-center rounded-full text-white">
+              <img src="https://www.image2url.com/r2/default/images/1786046415486-81c06058-2e7e-4c68-a309-fecb83cc668b.jpeg" alt="Logo" className="h-10 w-16" />
+            </span>
             <span>{companyName}</span>
           </div>
           <p className="mt-5 max-w-sm text-sm leading-7 text-white">
@@ -38,7 +40,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white">Contact</h3>
           <ul className="mt-5 space-y-3 text-sm">
             <li>hello@hi-fat.com</li>
-            <li>+254 (728) 042-590</li>
+            <li>+254 (735) 739-761</li>
             <li>Thika Road, Karasani, Nairobi</li>
           </ul>
           <div className="mt-5 flex gap-3">

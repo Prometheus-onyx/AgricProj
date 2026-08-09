@@ -27,8 +27,8 @@ const FAQ = () => {
                   onClick={() => setOpenIndex(isOpen ? -1 : index)}
                   className="flex w-full items-center justify-between px-6 py-5 text-left"
                 >
-                  <span className="text-lg font-semibold text-red-600">{item.question}</span>
-                  <motion.span animate={{ rotate: isOpen ? 180 : 0 }} className="text-red-600">
+                  <span className="text-lg font-semibold text-[#550000]">{item.question}</span>
+                  <motion.span animate={{ rotate: isOpen ? 180 : 0 }} className="text-[#550000]">
                     <FaChevronDown />
                   </motion.span>
                 </button>

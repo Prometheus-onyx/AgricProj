@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
-import { FaArrowRight } from 'react-icons/fa6';
-import SectionHeading from '../components/SectionHeading';
-import { products } from '../data/content';
+import { motion } from "framer-motion";
+import { FaArrowRight } from "react-icons/fa6";
+import SectionHeading from "../components/SectionHeading";
+import products from "../data/projects.json";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
@@ -15,9 +16,9 @@ const Products = () => {
         />
 
         <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {products.map((product, index) => (
+          {products.products.map((product, index) => (
             <motion.article
-              key={product.name}
+              key={product.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -25,13 +26,23 @@ const Products = () => {
               whileHover={{ y: -6, scale: 1.01 }}
               className="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-lg"
             >
-              <img src={product.image} alt={product.name} loading="lazy" className="h-48 w-full object-cover" />
+              <img
+                src={product.image}
+                alt={product.name}
+                loading="lazy"
+                className="h-48 w-full object-cover"
+              />
               <div className="p-7">
-                <h3 className="text-xl font-semibold text-red-600">{product.name}</h3>
+                <h3 className="text-xl font-semibold text-[#550000]">
+                  {product.name}
+                </h3>
                 <p className="mt-3 text-slate-600">{product.description}</p>
-                <a href="#contact" className="mt-6 inline-flex items-center font-semibold text-red-600">
+                <Link
+                  to={`/products/${product.id}`}
+                  className="mt-6 inline-flex items-center font-semibold text-[#550000]"
+                >
                   Learn More <FaArrowRight className="ml-2" />
-                </a>
+                </Link>
               </div>
             </motion.article>
           ))}

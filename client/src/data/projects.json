@@ -1,0 +1,138 @@
+{
+  "projects": [
+    {
+      "id": "maize-seeds",
+      "projects": [
+        {
+          "name": "Project Alpha",
+          "description": "A revolutionary agricultural project focused on sustainable farming practices.",
+          "eyebrow": "Sustainable Agriculture",
+          "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0"
+        }
+      ]
+    },
+    {
+      "id": "fertilizers",
+      "projects": [
+        {
+          "name": "Project Beta",
+          "description": "An innovative initiative to improve crop yields through advanced technology.",
+          "eyebrow": "Innovative Solutions",
+          "image": "https://plus.unsplash.com/premium_photo-1663089572474-6e2dc35d0ede?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0"
+        }
+      ]
+    },
+    {
+      "id": "pesticides",
+      "projects": [
+        {
+          "name": "Project Gamma",
+          "description": "A comprehensive pest management solution for modern agriculture.",
+          "eyebrow": "Pest Control",
+          "image": "https://images.unsplash.com/photo-1634752309905-6cb91bc78cf0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0"
+        }
+      ]
+    },
+    {
+      "id": "farm-machinery",
+      "projects": [
+        {
+          "name": "Project Beta",
+          "description": "An innovative initiative to improve crop yields through advanced technology.",
+          "eyebrow": "Innovative Solutions",
+          "image": "https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=900&q=80"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-equipment",
+      "projects": [
+        {
+          "name": "Rain Bird 1800 Series",
+          "description": "Durable pop‑up spray sprinkler delivering reliable, efficient coverage for lawns and gardens.",
+          "eyebrow": "Water Management",
+          "image": "https://www.image2url.com/r2/default/images/1786282234183-ac6c31d0-98e0-409d-9293-f549e2ef630b.jpeg"
+        },
+        {
+          "name": "Hunter Industries I-25",
+          "description": "A tough, commercial‑grade sprinkler delivering powerful coverage from 40 to 71 feet, with adjustable arcs and multiple nozzle options—ideal for sports fields, parks, and large landscapes.",
+          "eyebrow": "Commercial Irrigation",
+          "image": "https://www.image2url.com/r2/default/images/1786284665850-785d287b-3742-4233-94a5-00445b0cd7c7.jpeg"
+        },
+        {
+          "name": "Aqua Hub LTD pop-up sprinkler head for lawn irrigation.",
+          "description": "Durable, automated sprinkler head that rises during irrigation and retracts when off, delivering uniform lawn coverage with adjustable spray angles and hidden installation for a clean finish.",
+          "eyebrow": "Water Management",
+          "image": "https://www.image2url.com/r2/default/images/1786285072793-c75312c2-77c8-4d51-b2ad-cc2c8ef65db0.jpeg"
+        },
+        {
+          "name": "1000m Roll – 16mm Drip Tape",
+          "description": "High‑quality agricultural drip irrigation tape designed for efficient water delivery directly to crop roots. This 16mm tape roll (1000 meters) ensures uniform distribution, reduces water waste, and supports healthier, higher‑yield farming.",
+          "eyebrow": "Efficient Irrigation",
+          "image": "https://www.image2url.com/r2/default/images/1786285514556-829bbfe2-59a7-4346-9cc3-276899df42f0.jpeg"
+        },
+        {
+          "name": "Standard Residential Drip Irrigation System",
+          "description": "A complete home irrigation solution designed to deliver water directly to plant roots with minimal waste. This system uses durable drip lines, emitters, and connectors to provide uniform coverage, conserve water, and keep lawns and gardens healthy with ease.",
+          "eyebrow": "Water Management",
+          "image": "https://www.image2url.com/r2/default/images/1786285736963-ef7d473a-6200-410e-aec7-e62dd98f56ec.jpeg"
+        },
+        {
+          "name": "Gravity‑Powered Drip Irrigation System",
+          "description": "An eco‑friendly irrigation solution that uses natural gravity flow to deliver water directly to plant roots. Simple to install, cost‑effective, and ideal for small farms or gardens where consistent, low‑pressure watering ensures healthier crops with minimal waste.",
+          "eyebrow": "Sustainable Irrigation",
+          "image": "https://www.image2url.com/r2/default/images/1786285897755-7588834c-4ef9-41a3-86d9-6d345d6f050e.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "animal-feed",
+      "projects": [
+        {
+          "name": "Project Beta",
+          "description": "An innovative initiative to improve crop yields through advanced technology.",
+          "eyebrow": "Innovative Solutions",
+          "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "name": "Maize Seeds",
+      "description": "Drought-tolerant hybrids engineered for strong yields and resilience.",
+      "image": "https://images.unsplash.com/photo-1651667343153-6dc318e27e41?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "id": "maize-seeds"
+    },
+    {
+      "name": "Fertilizers",
+      "description": "Balanced nutrition blends for healthier growth at every stage.",
+      "image": "https://plus.unsplash.com/premium_photo-1663089572474-6e2dc35d0ede?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "id": "fertilizers"
+    },
+    {
+      "name": "Pesticides",
+      "description": "Targeted protection with responsible application and safety controls.",
+      "image": "https://images.unsplash.com/photo-1634752309905-6cb91bc78cf0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "id": "pesticides"
+    },
+    {
+      "name": "Farm Machinery",
+      "description": "Reliable equipment designed to improve productivity and reduce effort.",
+      "image": "https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=900&q=80",
+      "id": "farm-machinery"
+    },
+    {
+      "name": "Irrigation Equipment",
+      "description": "Smart irrigation components built for precision and long-term value.",
+      "image": "https://images.unsplash.com/photo-1738598665806-7ecc32c3594c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "id": "irrigation-equipment"
+    },
+    {
+      "name": "Animal Feed",
+      "description": "Nutritious feed solutions supporting healthier herds and faster growth.",
+      "image": "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80",
+      "id": "animal-feed"
+    }
+  ]
+}

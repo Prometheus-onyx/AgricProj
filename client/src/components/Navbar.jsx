@@ -21,13 +21,13 @@ const Navbar = () => {
         scrolled ? 'bg-black/80 text-slate-900 shadow-lg backdrop-blur' : 'bg-black text-white'
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
         <NavLink 
         to="/" 
         key="home" 
         className="flex items-center gap-3 text-lg font-semibold tracking-wide">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-red-600 text-white shadow-lg">
-            🌾
+          <span className="flex h-10 w-10 items-center justify-center rounded-full text-white shadow-lg">
+            <img src="https://www.image2url.com/r2/default/images/1786046415486-81c06058-2e7e-4c68-a309-fecb83cc668b.jpeg" alt="Logo" className="h-10 w-16" />
           </span>
           <span className='text-slate-900 dark:text-slate-100'>{companyName}</span>
         </NavLink>
@@ -38,9 +38,9 @@ const Navbar = () => {
             key={item.path} 
             to={item.path} 
             className={({ isActive }) => 
-              `text-sm font-medium transition hover:text-red-600 ${
+              `text-sm font-medium transition hover:text-[#550000] ${
                 isActive
-                ? "text-red-600 dark:text-red-400"
+                ? "text-[#550000] dark:text-[#550000]"
                 : "text-slate-900 dark:text-slate-100"
               }`
             }

@@ -40,7 +40,7 @@ const Testimonials = () => {
                 <div className="flex items-center gap-4">
                   <img src={activeTestimonial.image} alt={activeTestimonial.name} className="h-16 w-16 rounded-full object-cover" />
                   <div>
-                    <h3 className="text-xl font-semibold text-red-600">{activeTestimonial.name}</h3>
+                    <h3 className="text-xl font-semibold text-[#550000]">{activeTestimonial.name}</h3>
                     <p className="text-slate-600">{activeTestimonial.role}</p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const Testimonials = () => {
               key={item.name}
               type="button"
               onClick={() => setActiveIndex(index)}
-              className={`h-3 w-3 rounded-full transition ${activeIndex === index ? 'bg-red-600' : 'bg-slate-300'}`}
+              className={`h-3 w-3 rounded-full transition ${activeIndex === index ? 'bg-[#550000]' : 'bg-slate-300'}`}
               aria-label={`Show testimonial ${index + 1}`}
             />
           ))}

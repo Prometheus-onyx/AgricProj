@@ -67,7 +67,8 @@ export const services = [
   },
 ];
 
-export const products = [
+export const products = 
+[
   {
     name: 'Maize Seeds',
     description: 'Drought-tolerant hybrids engineered for strong yields and resilience.',
@@ -200,7 +201,7 @@ export const socialLinks = [
 
 export const contactDetails = [
   { label: 'Email', value: 'hello@hi-fat.com', icon: FaEnvelope },
-  { label: 'Phone', value: '+254 (728) 042-590', icon: FaPhone },
+  { label: 'Phone', value: '+254 (735) 739-761', icon: FaPhone },
   { label: 'Address', value: 'Thika Road, Karasani, Nairobi', icon: FaLocationDot },
   { label: 'Working Hours', value: 'Sun–Fri: 8:00 AM – 6:00 PM', icon: FaClock },
 ];

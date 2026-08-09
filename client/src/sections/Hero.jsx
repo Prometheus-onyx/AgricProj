@@ -5,7 +5,7 @@ import { companyTagline, heroHighlights } from '../data/content';
 const Hero = () => {
 
   return (
-    <section id="home" className="relative isolate overflow-hidden bg-[#0f2417] text-white">
+    <section id="#" className="relative isolate overflow-hidden bg-[#0f2417] text-white">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -64,10 +64,10 @@ const Hero = () => {
               <div className="rounded-[1.7rem] bg-gradient-to-br from-[#e8f5e9] via-white to-[#f8f1e7] p-8 text-slate-800">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">Field Intelligence</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#550000]">Field Intelligence</p>
                     <h2 className="mt-2 text-2xl font-semibold">Smart agriculture, naturally.</h2>
                   </div>
-                  <div className="rounded-full bg-red-600 p-3 text-white">
+                  <div className="square-8 rounded-full bg-[#550000] p-3 text-white">
                     <FaSeedling className="text-xl" />
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const Hero = () => {
                   ].map(([label, value]) => (
                     <div key={label} className="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
                       <p className="text-sm text-slate-500">{label}</p>
-                      <p className="mt-1 text-xl font-semibold text-red-600">{value}</p>
+                      <p className="mt-1 text-xl font-semibold text-[#550000]">{value}</p>
                     </div>
                   ))}
                 </div>

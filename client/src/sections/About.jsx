@@ -48,7 +48,7 @@ const About = () => {
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {highlights.map((item) => (
               <div key={item} className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm">
-                <span className="rounded-full bg-[#E8F5E9] p-2 text-red-600">
+                <span className="rounded-full bg-[#E8F5E9] p-2 text-[#550000]">
                   <FaCheck />
                 </span>
                 <span className="font-medium text-slate-700">{item}</span>
