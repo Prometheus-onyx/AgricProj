@@ -48,39 +48,39 @@
       "id": "irrigation-equipment",
       "projects": [
         {
-          "name": "Rain Bird 1800 Series",
+          "name": "SPRAY HEADS & NOZZLES",
           "description": "Durable pop‑up spray sprinkler delivering reliable, efficient coverage for lawns and gardens.",
-          "eyebrow": "Water Management",
+          "eyebrow": "EFFICIENT WATERING",
           "image": "https://www.image2url.com/r2/default/images/1786282234183-ac6c31d0-98e0-409d-9293-f549e2ef630b.jpeg"
         },
         {
-          "name": "Hunter Industries I-25",
+          "name": "GEAR-DRIVEN ROTORS",
           "description": "A tough, commercial‑grade sprinkler delivering powerful coverage from 40 to 71 feet, with adjustable arcs and multiple nozzle options—ideal for sports fields, parks, and large landscapes.",
-          "eyebrow": "Commercial Irrigation",
+          "eyebrow": "COMMERCIAL TURF MANAGEMENT",
           "image": "https://www.image2url.com/r2/default/images/1786284665850-785d287b-3742-4233-94a5-00445b0cd7c7.jpeg"
         },
         {
-          "name": "Aqua Hub LTD pop-up sprinkler head for lawn irrigation.",
+          "name": "AUTOMATED SPRINKLERS",
           "description": "Durable, automated sprinkler head that rises during irrigation and retracts when off, delivering uniform lawn coverage with adjustable spray angles and hidden installation for a clean finish.",
-          "eyebrow": "Water Management",
+          "eyebrow": "RESIDENTIAL LAWNS",
           "image": "https://www.image2url.com/r2/default/images/1786285072793-c75312c2-77c8-4d51-b2ad-cc2c8ef65db0.jpeg"
         },
         {
           "name": "1000m Roll – 16mm Drip Tape",
           "description": "High‑quality agricultural drip irrigation tape designed for efficient water delivery directly to crop roots. This 16mm tape roll (1000 meters) ensures uniform distribution, reduces water waste, and supports healthier, higher‑yield farming.",
-          "eyebrow": "Efficient Irrigation",
+          "eyebrow": "OPEN-FIELD CROPS ● ROOT-ZONE WATERING",
           "image": "https://www.image2url.com/r2/default/images/1786285514556-829bbfe2-59a7-4346-9cc3-276899df42f0.jpeg"
         },
         {
-          "name": "Standard Residential Drip Irrigation System",
+          "name": "DRIP IRRIGATION KIT",
           "description": "A complete home irrigation solution designed to deliver water directly to plant roots with minimal waste. This system uses durable drip lines, emitters, and connectors to provide uniform coverage, conserve water, and keep lawns and gardens healthy with ease.",
-          "eyebrow": "Water Management",
+          "eyebrow": "FLOWERBEDS & VEGETABLE PATCHES ● EASY-TO-INSTALL",
           "image": "https://www.image2url.com/r2/default/images/1786285736963-ef7d473a-6200-410e-aec7-e62dd98f56ec.jpeg"
         },
         {
-          "name": "Gravity‑Powered Drip Irrigation System",
+          "name": "GRAVITY DRIP SYSTEM",
           "description": "An eco‑friendly irrigation solution that uses natural gravity flow to deliver water directly to plant roots. Simple to install, cost‑effective, and ideal for small farms or gardens where consistent, low‑pressure watering ensures healthier crops with minimal waste.",
-          "eyebrow": "Sustainable Irrigation",
+          "eyebrow": "Sustainable farming ● Low-pressure irrigation",
           "image": "https://www.image2url.com/r2/default/images/1786285897755-7588834c-4ef9-41a3-86d9-6d345d6f050e.jpeg"
         }
       ]
