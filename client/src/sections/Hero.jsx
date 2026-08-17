@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaSeedling, } from 'react-icons/fa6';
 import { companyTagline, heroHighlights } from '../data/content';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 
@@ -32,18 +33,18 @@ const Hero = () => {
               We provide sustainable farming solutions, quality agricultural products, and innovative technologies that empower farmers.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#services"
+              <Link
+                to="/services"
                 className="inline-flex items-center justify-center rounded-full bg-[#FBC02D] px-6 py-3 font-semibold text-slate-900 transition hover:scale-[1.02]"
               >
                 Explore Services <FaArrowRight className="ml-2" />
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
             <ul className="mt-8 flex flex-wrap gap-3">
               {heroHighlights.map((item) => (
