@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaEnvelope, FaLocationDot, FaPhone, FaClock, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa6';
 import { contactDetails } from '../data/content';
+import { useState } from 'react';
 
 const socialLinks = [
   { icon: FaFacebookF, href: '#' },
@@ -10,6 +11,47 @@ const socialLinks = [
 ];
 
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+
+  const submitToWhatsapp = (e)=>{
+    e.preventDefault();
+
+    const phoneNumber = "254702896370";
+
+    const { name, email, phone, message } = formData;
+
+    const text = `*New HI-FAT Inquiry*
+
+  *Name:* ${name}
+  *Email:* ${email}
+  *Phone:* ${phone}
+
+  *Message:*
+  ${message}`;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(whatsappURL, "_blank").focus();
+
+    // Clear form
+    setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+
+  }
+
+
+
   return (
     <section id="contact" className="bg-black py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -57,24 +99,74 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4 }}
             className="rounded-[1.5rem] bg-white p-8 shadow-md"
+            onSubmit={submitToWhatsapp}
           >
             <div className="grid gap-4 md:grid-cols-2">
               <label className="text-sm font-medium text-slate-700">
                 Name
-                <input type="text" className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="Your name" />
+                <input 
+                  type="text" 
+                  required 
+                  name="name"
+                  value={formData.name}
+                  onChange={(e) =>
+                      setFormData({
+                          ...formData,
+                          name: e.target.value,
+                      })
+                  }
+                  className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="Your name" 
+                />
               </label>
               <label className="text-sm font-medium text-slate-700">
                 Email
-                <input type="email" className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="you@example.com" />
+                <input 
+                  type="email"  
+                  required
+                  name="email"
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      email: e.target.value,
+                    })
+                  }
+                  className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="you@example.com" 
+                />
               </label>
             </div>
             <label className="mt-4 block text-sm font-medium text-slate-700">
               Phone
-              <input type="tel" className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="+254 (735) 739-761" />
+              <input 
+                type="tel" 
+                required 
+                name="phone"
+                value={formData.phone}
+                onChange={(e)=>
+                  setFormData({
+                    ...formData,
+                    phone: e.target.value,
+                  })
+                }
+                className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="+254 (735) 739-761" 
+              />
             </label>
             <label className="mt-4 block text-sm font-medium text-slate-700">
               Message
-              <textarea rows="5" className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="Tell us about your farm or project" />
+              <textarea 
+                id='message' 
+                rows="5" 
+                required 
+                name="message"
+                value={formData.message}
+                onChange={(e)=>
+                  setFormData({
+                    ...formData,
+                    message: e.target.value,
+                  })
+                }
+                className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="Tell us about your farm or project" 
+              />
             </label>
             <button type="submit" className="mt-6 inline-flex items-center rounded-full bg-[#FBC02D] px-6 py-3 font-semibold text-slate-900 transition hover:scale-[1.01]">
               Send Message <FaArrowRight className="ml-2" />
