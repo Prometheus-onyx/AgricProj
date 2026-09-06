@@ -1,17 +1,26 @@
-import { motion } from 'framer-motion';
-import { FaArrowRight, FaEnvelope, FaLocationDot, FaPhone, FaClock, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa6';
-import { contactDetails } from '../data/content';
-import { useState } from 'react';
+import { motion } from "framer-motion";
+import {
+  FaArrowRight,
+  FaEnvelope,
+  FaLocationDot,
+  FaPhone,
+  FaClock,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
+} from "react-icons/fa6";
+import { contactDetails } from "../data/content";
+import { useState } from "react";
 
 const socialLinks = [
-  { icon: FaFacebookF, href: '#' },
-  { icon: FaInstagram, href: '#' },
-  { icon: FaTwitter, href: '#' },
-  { icon: FaLinkedinIn, href: '#' },
+  { icon: FaFacebookF, href: "#" },
+  { icon: FaInstagram, href: "#" },
+  { icon: FaTwitter, href: "#" },
+  { icon: FaLinkedinIn, href: "#" },
 ];
 
 const Contact = () => {
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,13 +28,17 @@ const Contact = () => {
     message: "",
   });
 
-
-  const submitToWhatsapp = (e)=>{
+  const submitToWhatsapp = (e) => {
     e.preventDefault();
 
     const phoneNumber = "254702896370";
 
     const { name, email, phone, message } = formData;
+
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      alert("Please fill in all fields.");
+      return;
+    }
 
     const text = `*New HI-FAT Inquiry*
 
@@ -38,19 +51,16 @@ const Contact = () => {
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
 
-    window.open(whatsappURL, "_blank").focus();
+    window.open(whatsappURL, "_blank");
 
     // Clear form
     setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
     });
-
-  }
-
-
+  };
 
   return (
     <section id="contact" className="bg-black py-24">
@@ -63,9 +73,15 @@ const Contact = () => {
             transition={{ duration: 0.4 }}
             className="rounded-[1.5rem] bg-white/10 p-8 text-white"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">Contact Us</p>
-            <h2 className="mt-4 text-3xl font-semibold">Let’s grow something remarkable together.</h2>
-            <p className="mt-4 text-slate-200">Reach out for support, product quotes, or a tailored consultation.</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">
+              Contact Us
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold">
+              Let’s grow something remarkable together.
+            </h2>
+            <p className="mt-4 text-slate-200">
+              Reach out for support, product quotes, or a tailored consultation.
+            </p>
 
             <div className="mt-8 space-y-4">
               {contactDetails.map((item) => {
@@ -76,7 +92,9 @@ const Contact = () => {
                       <Icon />
                     </span>
                     <div>
-                      <p className="text-sm uppercase tracking-[0.3em] text-slate-300">{item.label}</p>
+                      <p className="text-sm uppercase tracking-[0.3em] text-slate-300">
+                        {item.label}
+                      </p>
                       <p className="text-base text-white">{item.value}</p>
                     </div>
                   </div>
@@ -86,7 +104,11 @@ const Contact = () => {
 
             <div className="mt-8 flex gap-3">
               {socialLinks.map(({ icon: Icon, href }) => (
-                <a key={href} href={href} className="rounded-full bg-white/10 p-3 transition hover:bg-white/20">
+                <a
+                  key={href}
+                  href={href}
+                  className="rounded-full bg-white/10 p-3 transition hover:bg-white/20"
+                >
                   <Icon />
                 </a>
               ))}
@@ -104,24 +126,25 @@ const Contact = () => {
             <div className="grid gap-4 md:grid-cols-2">
               <label className="text-sm font-medium text-slate-700">
                 Name
-                <input 
-                  type="text" 
-                  required 
+                <input
+                  type="text"
+                  required
                   name="name"
                   value={formData.name}
                   onChange={(e) =>
-                      setFormData({
-                          ...formData,
-                          name: e.target.value,
-                      })
+                    setFormData({
+                      ...formData,
+                      name: e.target.value,
+                    })
                   }
-                  className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="Your name" 
+                  className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]"
+                  placeholder="Your name"
                 />
               </label>
               <label className="text-sm font-medium text-slate-700">
                 Email
-                <input 
-                  type="email"  
+                <input
+                  type="email"
                   required
                   name="email"
                   value={formData.email}
@@ -131,44 +154,50 @@ const Contact = () => {
                       email: e.target.value,
                     })
                   }
-                  className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="you@example.com" 
+                  className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]"
+                  placeholder="you@example.com"
                 />
               </label>
             </div>
             <label className="mt-4 block text-sm font-medium text-slate-700">
               Phone
-              <input 
-                type="tel" 
-                required 
+              <input
+                type="tel"
+                required
                 name="phone"
                 value={formData.phone}
-                onChange={(e)=>
+                onChange={(e) =>
                   setFormData({
                     ...formData,
                     phone: e.target.value,
                   })
                 }
-                className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="+254 (735) 739-761" 
+                className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]"
+                placeholder="+254 (735) 739-761"
               />
             </label>
             <label className="mt-4 block text-sm font-medium text-slate-700">
               Message
-              <textarea 
-                id='message' 
-                rows="5" 
-                required 
+              <textarea
+                id="message"
+                rows="5"
+                required
                 name="message"
                 value={formData.message}
-                onChange={(e)=>
+                onChange={(e) =>
                   setFormData({
                     ...formData,
                     message: e.target.value,
                   })
                 }
-                className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]" placeholder="Tell us about your farm or project" 
+                className="mt-2 w-full rounded-2xl border border-slate-200 bg-[#fafaf8] px-4 py-3 outline-none focus:border-[#2E7D32]"
+                placeholder="Tell us about your farm or project"
               />
             </label>
-            <button type="submit" className="mt-6 inline-flex items-center rounded-full bg-[#FBC02D] px-6 py-3 font-semibold text-slate-900 transition hover:scale-[1.01]">
+            <button
+              type="submit"
+              className="mt-6 inline-flex items-center rounded-full bg-[#FBC02D] px-6 py-3 font-semibold text-slate-900 transition hover:scale-[1.01]"
+            >
               Send Message <FaArrowRight className="ml-2" />
             </button>
           </motion.form>
