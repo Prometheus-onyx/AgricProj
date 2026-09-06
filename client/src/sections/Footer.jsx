@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
 
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-4 border-t border-white/10 px-6 pt-8 text-sm text-white md:flex-row md:items-center md:justify-between lg:px-8">
-        <p>© { new Date().getFullYear()} Powered by <a className='hover:text-black' href='https://portfolio-354q.vercel.app/'> Ekron</a>. All rights reserved.</p>
+        <p>© { new Date().getFullYear()}. {companyName}. All rights reserved.</p>
         <div className="flex gap-4">
           <a href="#" className="hover:text-black">Privacy Policy</a>
           <a href="#" className="hover:text-black">Terms</a>
